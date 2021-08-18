@@ -36,7 +36,7 @@ export default function Index({ posts }) {
 
         <Layout>
             <Head>
-                <title>ВместоСклада</title>
+                <title>ВместоСклада 1</title>
             </Head>
             <FixedMenu height={height} visible={visible} />
             <ReactResizeDetector onResize={onResize} handleHeight>
@@ -49,25 +49,6 @@ export default function Index({ posts }) {
             <WarehouseInfo />
             <Partners />
             <Contacts />
-
-            {/* <div>
-                {posts && posts.map((post) => (
-                    <div key={post.id}>
-                        <h2>{post.Title}</h2>
-                    </div>
-                ))}
-            </div> */}
-
         </Layout>
     )
 }
-
-// export async function getStaticProps() {
-//     const res = await fetch("http://localhost:1337/posts/")
-//     const posts = await res.json()
-
-
-//     return {
-//         props: { posts },
-//     }
-// }
