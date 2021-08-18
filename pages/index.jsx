@@ -36,7 +36,7 @@ export default function Index({ posts }) {
 
         <Layout>
             <Head>
-                <title>ВместоСклада 1</title>
+                <title>ВместоСклада</title>
             </Head>
             <FixedMenu height={height} visible={visible} />
             <ReactResizeDetector onResize={onResize} handleHeight>
