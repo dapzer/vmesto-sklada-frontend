@@ -1,0 +1,55 @@
+.aboutOne{
+    width: 100%;
+    background-color: #333333;
+}
+
+.aboutOne h1{
+    text-align: center;
+    font-size: 35px;
+    padding-bottom: 10px;
+}
+
+.container{
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 20px 10px 20px 10px;
+}
+
+.items{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.text{
+    width: 100%;
+    max-width: 380px;
+}
+
+.text p{
+    margin-top: 20px;
+    font-size: 19px;
+}
+
+.items img{
+    width: 100%;
+    max-width: 600px;
+    height: 280px;
+    box-shadow: 0 0 10px rgb(255 255 255 / 50%);
+}
+
+.unsetMargin{
+    margin-top: unset !important;
+}
+
+@media screen and (max-width: 780px){
+    .image img{
+        display: none;
+    }
+    .iteems{
+        justify-content: center;
+    }
+}

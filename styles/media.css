@@ -1,0 +1,10 @@
+@media screen and (max-height: 640px){
+    .sectionFirst{
+        height: unset;
+    }
+    .wrapper{
+        padding-top: 50px;
+        position: unset;
+    }
+}
+

@@ -1,0 +1,38 @@
+.content{
+    width: 100%;
+    max-width: 1126px;
+    margin: 0 auto;
+    border: solid 2px #fff;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+.container{
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+.content h1{
+    font-size: 25px;
+    padding-bottom: 10px;
+}
+
+.content p{
+    padding-bottom: 10px;
+    font-size: 20px;
+}
+
+.content ul{
+    display: block;
+    list-style-type: disc;
+    color: #fff;
+    font-size: 17px;
+    padding-inline-start: 20px;
+    padding-bottom: 5px;
+}
+
+.content li{
+    padding-bottom: 5px;
+}

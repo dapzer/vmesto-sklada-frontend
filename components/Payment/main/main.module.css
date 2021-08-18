@@ -1,0 +1,111 @@
+.main{
+    background-color: #181818;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    background-size: cover;
+}
+
+.container{
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 20px 10px 20px 10px;
+}
+
+.container h2{
+    font-size: 60px;
+    padding-top: 100px;
+    text-align: center;
+}
+
+.container p{
+    font-size: 35px;
+    padding-top: 10px;
+    text-align: center;
+}
+
+.line{
+    width: 100%;
+    max-width: 1170px;
+    height: 1px;
+    background-color: #fff;
+    margin: 0 auto;
+    margin-top: 30px;
+    border: 1px solid #fff;
+    border-radius: 250%;
+}
+
+.mainForm{
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+
+.mainForm div{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 15px;
+    width: 100%;
+    max-width: 600px;
+}
+
+.mainForm h1{
+    font-size: 25px;
+}
+
+.mainForm select{
+    width: 100%;
+    max-width: 350px;
+    font-size: 17px;
+    border-radius: 10px;
+    padding-left: 10px;
+    height: 25px;
+}
+
+.mainForm input{
+    width: 100%;
+    max-width: 350px;
+    font-size: 17px;
+    border-radius: 10px;
+    padding-left: 10px;
+    height: 25px;
+}
+
+.mainForm textarea{
+    width: 100%;
+    max-width: 350px;
+    font-size: 17px;
+    height: 100%;
+    max-height: 70px;
+    padding-left: 10px;
+    border-radius: 10px;
+    min-width: 300px;
+    resize: none;
+}
+
+.mainForm button{
+    width: 200px;
+    background-color: #2ecc71;
+    color: #fff;
+    height: 35px;
+    font-size: 17px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 570px){
+    .mainForm div{
+        flex-wrap: wrap;
+        justify-content: center;
+    }   
+    .mainForm h1{
+        padding-bottom: 5px;
+    }
+}

@@ -1,0 +1,32 @@
+.cdb{
+    width: 100%;
+    max-width: 850px;
+    border-radius: 10px;
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.cdbSub{
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.cdbSub div{
+    width: 100%;
+    max-width: 380px;
+}
+
+.cdbSub img{
+    width: 30px;
+}
+
+.cdbSub p{
+    font-size: 17px;
+    padding-top: 10px;
+}
