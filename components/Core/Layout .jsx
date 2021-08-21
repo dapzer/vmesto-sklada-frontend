@@ -1,5 +1,5 @@
 import React from 'react'
-import Header from "./header/Header";
+import Header from "./header1/Header";
 import NavBar from "./footer/footer";
 import { ContactModal } from "./contact-modal/ContactModal"
 import ContextProvider from "./Context"
