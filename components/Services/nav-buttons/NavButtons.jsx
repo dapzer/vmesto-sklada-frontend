@@ -1,11 +1,7 @@
 import React from 'react'
 import styles from './nav-buttons.module.css'
 
-export const NavButtons = ({ setStatus, services, setServiceId }) => {
-
-    const change = (id) => {
-        setServiceId(services.map((service) => { return service.id; }).indexOf(id))
-    }
+export const NavButtons = ({ setStatus }) => {
 
     return (
         <div className={styles.main}>
@@ -16,11 +12,6 @@ export const NavButtons = ({ setStatus, services, setServiceId }) => {
             <button onClick={() => {setStatus("cargoPacking")}}>Упаковка грузов</button>
             <button onClick={() => {setStatus("orderPicking")}}>Комплектация заказов</button>
 
-            {services && services.map((service) => service.Show && (
-                <div key={service.id}>
-                    <button  onClick={() => change(service.id)}>{service.Service}</button>
-                </div>
-            ))}
         </div>
     )
 }

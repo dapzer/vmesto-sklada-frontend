@@ -11,12 +11,10 @@ import { Treatment } from '../components/Services/storage/Treatment'
 import { OrderPicking } from '../components/Services/storage/OrderPicking'
 import { CargoPacking } from '../components/Services/storage/CargoPacking'
 import { PriceBtn } from '../components/Core/price-btn/PriceBtn'
-import ReactMarkdown from "react-markdown";
-import raw from "rehype-raw";
 
-export default function Services({ services }) {
 
-    const [serviceId, setServiceId] = useState(0)
+export default function Services() {
+
 
     const [status, setStatus] = useState("responseStorage")
 
@@ -47,21 +45,10 @@ export default function Services({ services }) {
             <Main>
                 <NavButtons setStatus={setStatus} services={services} setServiceId={setServiceId} />
                 <Content>
-                    <ReactMarkdown rehypePlugins={[raw]} key={services} children={services[serviceId].Description} />
                     {ContentSwitch()}
                     <PriceBtn url="/payment" text="Заказать расчёт" />
                 </Content>
             </Main>
         </Layout>
     )
-}
-
-export async function getStaticProps(context) {
-    
-    const res = await fetch("http://localhost:1337/services?_sort=id&Show_eq=true")
-    const services = await res.json()
-
-    return {
-        props: { services }, // will be passed to the page component as props
-    }
 }
