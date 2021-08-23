@@ -7,7 +7,6 @@
     font-size: 17px;
     color: #fff;
     text-decoration: none;
-    /* position: relative; */
     font-weight: 550;
     display: inline-block;
     display: flex;
@@ -21,4 +20,12 @@
     padding-right: 15px;
     padding-left: 15px;
     transition: 1s;
+}
+
+.container a:hover:before{
+    width: 0%;
+}
+
+.container a:hover:after{
+    width: 0%;
 }

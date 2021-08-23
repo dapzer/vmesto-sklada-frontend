@@ -48,8 +48,8 @@ export default function Services({ services }) {
                 <NavButtons setStatus={setStatus} services={services} setServiceId={setServiceId} />
                 <Content>
                     <ReactMarkdown rehypePlugins={[raw]} key={services} children={services[serviceId].Description} />
-                    {/* {ContentSwitch()} */}
-                    <PriceBtn />
+                    {ContentSwitch()}
+                    <PriceBtn url="/payment" text="Заказать расчёт" />
                 </Content>
             </Main>
         </Layout>

@@ -1,9 +1,9 @@
 .logo{
-  font-size: 28px;
-  color: #fff;
-  text-transform: uppercase;
-  text-decoration: none;
-  z-index: 150;
+  font-size: 28px !important;
+  color: #fff !important;
+  text-transform: uppercase !important;
+  text-decoration: none !important;
+  z-index: 150 !important;
 }
   
   
@@ -45,7 +45,7 @@
   color: #fff;
 }
 
-.headerLink{
+.headerMenu a{
   color: #fff;
   position: relative;
   display: inline-block;
@@ -57,12 +57,12 @@
   padding-bottom: 4px;
 }
 
-.headerLink:hover{
+.headerMenu a:hover{
   color: #fff;
 }
 
-.headerLink:before,
-.headerLink:after{
+.headerMenu a:before,
+.headerMenu a:after{
   content: '';
   background: #e74c3c;
   position: absolute;
@@ -73,21 +73,21 @@
   transition: all .3s linear;
 }
 
-.headerLink:before{
+.headerMenu a:before{
   top: 0;
   left: 0;
 }
 
-.headerLink:after{
+.headerMenu a:after{
   top: 100%;
   right: 0;
 }
 
-.headerLink:hover:before{
+.headerMenu a:hover:before{
   width: 100%;
 }
 
-.headerLink:hover:after{
+.headerMenu a:hover:after{
   width: 100%;
 }
 
@@ -104,19 +104,19 @@
 
 /* Menu-gamburger */
 
-.headerList{
+.sectionHead ul{
   display: flex;
   position: relative;
   align-items: center;
   z-index: 2;
 }
 
-.headerList li{
+.sectionHead li{
   list-style: none;
   margin-left: 20px;
 }
 
-.headerLink{
+.headerMenu a{
   text-transform: uppercase;
   font-size: 17px;
   color: #fff;
@@ -187,10 +187,10 @@
     right: 0;
     transition: all 0.3s ease 0s; 
   }
-  .headerList{
+  .sectionHead ul{
     display: block;
   }
-  .headerList li{
+  .sectionHead li{
     margin-left: 0px;
     margin-bottom: 20px;
     text-align: center;

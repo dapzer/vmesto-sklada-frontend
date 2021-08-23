@@ -8,15 +8,6 @@ export  const useMyContext = () => {
 
 const ContextProvider = props => {
 
-    // const [imgSrc, setimgSrc] = useState("")
-
-    // const [showImg, setShowImg] = useState(false)
-
-    // const imageViewer = event => {
-    //     setimgSrc(event.target.src)
-    //     setShowImg(true)
-    // }
-
     const [openModal, setOpenModal] = useState(false)
 
     const toggleModal = () => setOpenModal(!openModal)
@@ -25,10 +16,6 @@ const ContextProvider = props => {
         <MyContext.Provider value={{
             openModal,
             toggleModal,
-            // imageViewer,
-            // imgSrc,
-            // showImg,
-            // setShowImg
 
         }}>
             {props.children}

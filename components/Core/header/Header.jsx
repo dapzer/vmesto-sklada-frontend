@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
-import { PriceBtn } from "../price-btn/PriceBtn";
 import styles from "./header.module.css";
 import { useMyContext } from "../Context"
 import Link from "next/link";
+import { LinksList } from "./LinksList";
 
 
 export default function Header() {
@@ -37,14 +37,7 @@ export default function Header() {
                     <span></span>
                 </div>
                 <nav className={menuActive ? `${styles.headerMenu} ${styles.active}` : styles.headerMenu}>
-                    <ul className={styles.headerList}>
-                        <li><Link href={"/#about"}><a onClick={burgerClose} className={styles.headerLink}>О нас</a></Link></li>
-                        <li><Link href={'/services'}><a onClick={burgerClose} className={styles.headerLink}>Услуги</a></Link></li>
-                        <li><Link href={"/#partners"}><a onClick={burgerClose} className={styles.headerLink}>Наши партнёры</a></Link></li>
-                        <li><Link href={"/#contacts"}><a onClick={burgerClose} className={styles.headerLink}>Контакты</a></Link></li>
-                        <li onClick={burgerClose}><a className={styles.headerLink} onClick={toggleModal} rel="modal:open">Обратная связь</a></li>
-                        <li><PriceBtn /></li>
-                    </ul>
+                    <LinksList burgerClose={burgerClose} toggleModal={toggleModal} />
                 </nav>
             </div>
         </div>
