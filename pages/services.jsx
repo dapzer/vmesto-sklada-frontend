@@ -29,7 +29,7 @@ export default function Services({ services }) {
     )
 }
 
-export async function getStaticProps(context) {
+export async function getServerSideProps(context) {
     
     const res = await fetch("http://localhost:1337/services?_sort=id&Show_eq=true")
     const services = await res.json()
