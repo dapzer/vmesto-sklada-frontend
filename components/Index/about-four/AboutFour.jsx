@@ -23,7 +23,6 @@ export const AboutFour = () => {
                     <ImageViewer>
                         <img src="./images/about/imgFour.jpeg" alt="" />
                     </ImageViewer>
-                    
                 </div>
             </div>
         </div>

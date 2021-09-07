@@ -12,7 +12,6 @@ export default function Services({ services }) {
 
     const [serviceId, setServiceId] = useState(0)
 
-
     return (
         <Layout>
             <Head>
@@ -31,7 +30,7 @@ export default function Services({ services }) {
 
 export async function getServerSideProps(context) {
     
-    const res = await fetch("http://localhost:1337/services?_sort=id&Show_eq=true")
+    const res = await fetch(`${process.env.STRAPI_URL}/services?_sort=id&Show_eq=true`)
     const services = await res.json()
 
     return {
