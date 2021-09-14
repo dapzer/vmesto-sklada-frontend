@@ -1,5 +1,5 @@
 import React from 'react'
-import { ImageViewer } from '../../Core/image-viewer/ImageViewer'
+import { ImageViewer } from "image-viewer-dv" 
 import styles from './about-two.module.css'
 
 export const AboutTwo = () => {

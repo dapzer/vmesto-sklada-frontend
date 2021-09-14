@@ -1,5 +1,5 @@
 import React from 'react'
-import { ImageViewer } from '../../Core/image-viewer/ImageViewer'
+import { ImageViewer } from "image-viewer-dv" 
 import { PriceBtn } from '../../Core/price-btn/PriceBtn'
 import styles from './about-four.module.css'
 

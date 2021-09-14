@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./about-one.module.css"
-import { ImageViewer } from "../../Core/image-viewer/ImageViewer";
+import { ImageViewer } from "image-viewer-dv" 
 
 export const AboutOne = () => {
 

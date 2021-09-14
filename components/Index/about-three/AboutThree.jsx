@@ -1,5 +1,5 @@
 import React from 'react'
-import { ImageViewer } from '../../Core/image-viewer/ImageViewer'
+import { ImageViewer } from "image-viewer-dv" 
 import styles from './abot-three.module.css'
 
 export const AboutThree = () => {
